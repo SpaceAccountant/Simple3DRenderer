@@ -1,0 +1,37 @@
+Contents:
+ - References
+ - Models
+ - Command Description
+ - Command Usage
+ - Contace
+
+References:
+Use "res/maps/level1.map" and "res/maps/level2.map" as references when reading this.
+
+Models:
+The engine can only read .obj and .mtl files for models. The engine can only properly render triangles, so any other polygon types in a model file will have unintended results.
+I recomend using Blender which can be downloaded from https://www.blender.org/
+
+Command Description:
+ex        - Describes the exit position and bounding box. There is only one exit.
+g         - Describes the position of a new pickup. There may be as many pickups as desired.
+gb        - Describes the bounding box of the pickups after it. The bounding box is specific to each pickup, so the location of this command is important.
+gm        - Describes the model of every pickup. There is only one pickup model and it is used for every pickup.
+gr        - Describes the rotation speed of every pickup. There is only one rotation speed and it is used for every pickup.
+l         - Describes the position, ambient color, diffuse color, and attenuation of a new light. There is a maximum of eight lights.
+m         - Describes the model of the map. There is only one map model. This model is considered a collidable object by the engine, so anything in the map model will have collision.
+map_light - If this command is found then the lights will affect the map model. They don't by default.
+ps        - Describes the starting position and rotation of the player.
+
+Command Usage:
+ex <x position> <y position> <z position> <bounding box lower x offset> <bounding box lower y offset> <bounding box lower z offset> <bounding box upper x offset> <bounding box upper y offset> <bounding box upper z offset>
+g <x position> <y position> <z position>
+gb <bounding box lower x offset> <bounding box lower y offset> <bounding box lower z offset> <bounding box upper x offset> <bounding box upper y offset> <bounding box upper z offset>
+gm <.obj file> <.mtl file>
+gr <x axis angular speed> <y axis angular speed> <z axis angular speed>
+l <x position> <y position> <z position> <ambient red color> <ambient green color> <ambient blue color> <ambient alpha color> <diffuse red color> <diffuse green color> <diffuse blue color> <diffuse alpha color> <constant attenuation> <linear attenuation> <quadratic attenuation>
+m <.obj file> <.mtl file>
+ps <x position> <y position> <z position> <x axis rotation> <y axis rotation> <z axis rotation>
+
+Contact:
+If you want more info or have questions contact jaidenthedoctor@gmail.com

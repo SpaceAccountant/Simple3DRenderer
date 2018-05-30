@@ -1,0 +1,6 @@
+m res/models/maps/level2.obj res/models/maps/level2.mtl
+gm res/models/planet.obj res/models/planet.mtl
+g 161.0 6.0 133.0
+gr 0.0 0.004363 0.0
+map_light
+l -159.0 25.0 129.0 0.1 0.1 0.1 1.0 1.0 1.0 1.0 1.0 1.0 0.0 0.0

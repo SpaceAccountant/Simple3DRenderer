@@ -1,0 +1,5 @@
+# Ignore source editor config directories.
+.vscode/
+
+# Ignore the build directory.
+build/

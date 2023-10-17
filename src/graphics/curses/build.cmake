@@ -21,5 +21,5 @@ PRIVATE
 )
 target_link_libraries( ${RENDER_LIBRARY}
 PUBLIC
-	${CURSES_LIBRARY}
+    ${PROJECT_CURSES_LIBRARY}
 )

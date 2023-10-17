@@ -36,7 +36,7 @@ if ( NOT PROJECT_RENDER_BACK_ENDS )
 	)
 endif()
 
-foreach( BACKEND IN LISTS RENDER_BACK_ENDS )
+foreach( BACKEND IN LISTS PROJECT_RENDER_BACK_ENDS )
 	set( RENDER_LIBRARY render_${BACKEND} )
 
 	message( "Configuring back-end rendering library \"${RENDER_LIBRARY}\"..." )
